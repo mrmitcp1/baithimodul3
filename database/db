@@ -1,0 +1,25 @@
+drop database Homestay;
+create database Homestay;
+use Homestay;
+create table Homestay(
+ID int auto_increment primary key,
+Name varchar(30) not null,
+City varchar(50) not null,
+Bedrooms int not null,
+Price int not null,
+Toilet int not null,
+Describes varchar(100) not null
+);
+
+INSERT INTO Homestay(ID,Name,City,Bedrooms,Price,Toilet,Describes)
+Values
+(1,'David','New York',20,1000,22,'Good'),
+(2,'Maria','Tokyo',50,2000,80,'Very Good'),
+(3,'Bob','Osaka',10,200,14,'Small'),
+(4,'LuBu','Bejing',30,8000,40,'Cheap'),
+(5,'Cao Zi Zi','Ma Cao',24,1200,30,'Expensive'),
+(6,'Viet','Quang Ninh',100,800,200,'Good of God'),
+(7,'Iron Man','Chicago',10,300,15,'Small'),
+(8,'Antoni','Sao Pao Lo',50,1000,55,'Good');
+
+SELECT * FROM Homestay;
